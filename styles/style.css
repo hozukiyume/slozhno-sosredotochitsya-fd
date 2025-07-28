@@ -198,7 +198,6 @@
   font-weight: var(--text-font-weight);
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--text-color);
 }
 
 .card__link {
