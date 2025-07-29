@@ -3,7 +3,7 @@
   display: grid;
   grid-auto-rows: 1fr max-content 1fr;
   gap: 40px;
-  font-family: var(--font-family);
+  font-family: var(--font-family, monospace);
   font-size: 1.125rem;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -107,7 +107,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -121,10 +121,10 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid currentColor;
 }
 
-.no-focus {
+.header__motto {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: var(--title-font-weight);
   line-height: 83%;
@@ -206,7 +206,7 @@
 }
 
 .card__link:hover {
-  border-bottom: 1px solid var(--link-accent-color);
+  border-bottom: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .card__link:focus-visible {
-  outline: 1px solid var(--link-accent-color);
+  outline: 1px solid currentColor;
 }
 
 .section-pics {
@@ -245,7 +245,7 @@
   padding: 0 10px;
 }
 
-.focus {
+.footer__motto {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: var(--title-font-weight);
   line-height: 83%;
@@ -285,7 +285,7 @@
     padding: 192px 0px 173px 0;
   }
 
-  .no-focus {
+  .header__motto {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     justify-self: start;
     padding: 0;
@@ -383,17 +383,7 @@
     min-block-size: 1024px;
   }
 
-  .footer .decorated-zone::before {
-    margin-block-start: 20px;
-    margin-inline-end: 20px;
-  }
-
-  .footer .decorated-zone::after {
-    margin-block-end: 20px;
-    margin-inline-start: 20px;
-  }
-
-  .focus {
+  .footer__motto {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

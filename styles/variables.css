@@ -2,7 +2,6 @@
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --accent-color: #ff0070;
-  --border-color: #ff0070;
   --menu-color: #ff0070;
   --button-hover-accent-color: #ff007066;
   --focus-color: #db00ff;
@@ -13,7 +12,6 @@
   --title-bg-color: #ff0070;
   --text-color: #f1b2ce;
   --link-shadow-color: #ff0070;
-  --link-accent-color: #f1b2ce;
   --font-family: "IBM Plex Mono", monospace;
   --text-font-weight: 400;
   --title-font-weight: 700;
